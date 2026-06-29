@@ -1,0 +1,556 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    height: clamp(3vw, 3em, 6vw);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav a {
+    text-decoration-line: none;
+}
+
+nav h1 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: clamp(1.5vw, 1.5rem, 3.5vw);
+    font-weight: 700;
+}
+
+nav h1 span {
+    color: rgb(0, 106, 255);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    gap: clamp(2vw, 30px, 4vw);
+}
+
+header a h2 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: clamp(1vw, 1rem, 2.5vw);
+    font-weight: 400;
+}
+
+header a h2:hover {
+    color: rgb(0, 106, 255);
+}
+
+/* HOME */
+.home {
+    width: 100%;
+    min-height: fit-content;
+    position: relative;
+    padding: clamp(6vw, 6em, 12vw) 6% 0 6%;
+    background: rgb(0, 0, 0);
+}
+
+.bottom_fade {
+    width: 100%;
+    height: 20vw;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    position: absolute;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+}
+
+.name_outline {
+    color: transparent;
+    margin: 0;
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    bottom: clamp(8vw, 8em, 9vw);
+    transform: translateX(-50%);
+    font-family: "Oswald", sans-serif;
+    font-size: 12vw;
+    font-weight: 700;
+    white-space: nowrap;
+    -webkit-text-stroke: clamp(0.5px, 0.1vw, 1px) rgba(0, 106, 255, 1);
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.anas {
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.anas img {
+    margin: 0;
+    width: 34vw;
+    z-index: 3;
+    position: relative;
+    display: block;
+    object-fit: contain;
+}
+
+.anas .circle_fade {
+    width: 60vw;
+    height: 60vw;
+    top: 45%;
+    left: 50%;
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 106, 255);
+    background: radial-gradient(circle, rgb(0, 106, 255) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.fullname {
+    color: rgb(0, 106, 255);
+    margin: 0;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: clamp(1.5vw, 1.5em, 3vw);
+    transform: translateX(-50%);
+    font-family: "Oswald", sans-serif;
+    font-size: 12vw;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* ABOUT ME */
+.about {
+    width: 100%;
+    padding: clamp(3vw, 3em, 6vw) 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: clamp(2vw, 20px, 3vw);
+    background-color: rgb(0, 0, 0);
+    scroll-margin-top: clamp(3vw, 3em, 6vw);
+}
+
+/* about me */
+.about_me {
+    scroll-margin-top: clamp(3vw, 3em, 6vw);
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2vw, 20px, 3vw);
+}
+
+.text h1 {
+    color: rgb(0, 106, 255);
+    margin: 0;
+    font-size: clamp(2.5vw, 2.5rem, 4.5vw);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.describe {
+    display: flex;
+    flex-direction: column;
+}
+
+.describe h2 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: clamp(2.5vw, 2rem, 3vw);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.describe p {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: clamp(2vw, 1.5rem, 2.25vw);
+    font-weight: 300;
+    font-style: normal;
+}
+
+.about_me img {
+    margin: 0;
+    width: 33vw;
+    aspect-ratio: 3/4;
+    z-index: 3;
+    position: relative;
+    display: block;
+    object-fit: contain;
+}
+
+/* skillsandtools */
+.skillsandtools {
+    width: 100%;
+    padding-top: clamp(2.5vw, 35px, 3.5vw);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2vw, 20px, 3vw);
+}
+
+.skillsandtools h2 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: clamp(2.5vw, 2rem, 3vw);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(2vw, 20px, 3vw);
+}
+
+.tools img {
+    width: clamp(6vw, 6rem, 7vw);
+    object-fit: cover;
+}
+
+.icon-bg {
+    width: clamp(6vw, 6rem, 7vw);
+    height: clamp(6vw, 6rem, 7vw);
+    padding: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(10, 10, 10);
+    border-radius: clamp(1vw, 10px, 1.5vw);
+    transition: 0.25s ease;
+}
+
+.icon-bg:hover {
+    transform: translateY(-0.25em);
+    background: rgb(30, 30, 30);
+}
+
+
+/* education */
+.education {
+    width: 100%;
+    padding-top: clamp(2.5vw, 35px, 3.5vw);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2vw, 20px, 3vw);
+}
+
+.education h2 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: clamp(2.5vw, 2rem, 3vw);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.education h3 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: clamp(2vw, 1.5rem, 2.5vw);
+    font-weight: 300;
+    font-style: normal;
+}
+
+.highschool {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2vw, 20px, 3vw);
+}
+
+.university {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2vw, 20px, 3vw);
+}
+
+.result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5vw, 20px, 2.5vw);
+}
+
+.result details {
+    color: rgb(255, 255, 255);
+    font-size: clamp(1.25vw, 1.25rem, 2.25vw);
+    font-weight: 300;
+    font-style: normal;
+    border: clamp(0.5px, 0.05vw, 0.6px) solid rgba(255, 255, 255, 0.05);
+    border-radius: clamp(1.5vw, 20px, 2.5vw);
+    overflow: hidden;
+    background: rgba(20, 20, 20, 1);
+    transition: 0.3s;
+}
+
+.result details[open] {
+    border-radius: clamp(3vw, 20px, 5vw);
+}
+
+.result summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(1.5vw, 20px, 2.5vw);
+    font-size: clamp(1.5vw, 1.5rem, 2.5vw);
+    font-weight: 300;
+}
+
+.result summary::-webkit-details-marker {
+    display: none;
+}
+
+.result summary::after {
+    content: "+";
+    font-size: clamp(1.5vw, 1.5rem, 3vw);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.result details[open] summary::after {
+    content: "−";
+    font-size: clamp(1.5vw, 1.5rem, 3vw);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.result summary span {
+    margin: 0;
+}
+
+.result table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(10, 10, 10);
+}
+
+.result th,
+.result td {
+    padding: clamp(1vw, 15px, 2vw);
+    border: clamp(0.5px, 0.1vw, 1px) solid rgba(255, 255, 255, 0.125);
+}
+
+tfoot {
+    background-color: rgb(5, 5, 5, 0.05);
+}
+
+.result tr:hover {
+    color: rgb(0, 106, 255);
+    font-weight: bold;
+    background-color: #dceaff;
+}
+
+.result th {
+    text-align: center;
+}
+
+.result td:nth-child(1),
+.result td:nth-child(3),
+.result td:nth-child(4) {
+    text-align: center;
+}
+
+/* PROJECTS */
+.projects {
+    scroll-margin-top: clamp(3vw, 3em, 6vw);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(3vw, 3em, 6vw) 6%;
+    gap: clamp(2vw, 20px, 3vw);
+    background-color: rgb(0, 0, 0);
+}
+
+.projects h1 {
+    color: rgb(0, 106, 255);
+    margin: 0;
+    font-size: clamp(2.5vw, 2.5rem, 4.5vw);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.coding {
+    display: flex;
+    gap: clamp(2vw, 20px, 3vw);
+}
+
+.coding a {
+    width: 25vw;
+    flex-grow: 1;
+    flex-shrink: 0;
+    aspect-ratio: 4/5;
+    border-radius: clamp(1vw, 10px, 1.5vw);
+    background-color: rgb(10, 10, 10);
+}
+
+.calculator h1 {
+    position: absolute;
+    z-index: 2;
+}
+
+.calculator img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/5;
+    border-radius: clamp(1vw, 10px, 1.5vw);
+    z-index: 1;
+}
+
+/* DESIGN */
+.design {
+    scroll-margin-top: clamp(3vw, 3em, 6vw);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(3vw, 3em, 6vw) 6% clamp(6vw, 6em, 12vw) 6%;
+    gap: clamp(2vw, 20px, 3vw);
+    background-color: rgb(0, 0, 0);
+}
+
+.design h1 {
+    color: rgb(0, 106, 255);
+    text-transform: uppercase;
+    margin: 0;
+    font-size: clamp(2.5vw, 2.5rem, 4.5vw);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logodesign {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1.5vw, 20px, 2.5vw);
+}
+
+.logodesign img {
+    width: 25vw;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.posterdesign {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5vw, 20px, 2.5vw);
+}
+
+.posterdesign img {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* border-radius: clamp(1vw, 10px, 1.5vw); */
+}
+
+.poster {
+    display: flex;
+    gap: clamp(1.5vw, 20px, 2.5vw);
+}
+
+.poster img {
+    width: 25vw;
+    flex-grow: 1;
+    flex-shrink: 0;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    /* border-radius: clamp(1vw, 10px, 1.5vw); */
+}
+
+.thumbnaildesign {
+    display: flex;
+    gap: clamp(1.5vw, 20px, 2.5vw);
+}
+
+.thumbnaildesign img {
+    width: 40vw;
+    flex-grow: 1;
+    flex-shrink: 0;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* border-radius: clamp(1vw, 10px, 1.5vw); */
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(3vw, 3em, 6vw) 10%;
+    gap: clamp(2vw, 20px, 4vw);
+    background-color: rgb(20, 20, 20);
+}
+
+footer a {
+    text-decoration-line: none;
+}
+
+.footer h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: clamp(1.5vw, 1.5rem, 3.5vw);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.footer h1 span {
+    color: rgb(0, 106, 255);
+}
+
+.footer h2 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: clamp(1vw, 1rem, 3vw);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.social {
+    margin: 0;
+    gap: clamp(1.5vw, 15px, 3vw);
+    display: flex;
+}
+
+.social svg {
+    fill: rgb(255, 255, 255);
+    width: clamp(1vw, 1rem, 3vw);
+    height: clamp(1vw, 1rem, 3vw);
+    flex-shrink: 0;
+    object-fit: contain;
+}

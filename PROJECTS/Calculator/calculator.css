@@ -1,0 +1,33 @@
+.allButton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+button {
+    height: 48px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.num-btn {
+    background-color: gray;
+}
+
+.op-btn {
+    background-color: orange;
+}
+
+.equal-btn {
+    background-color: orange;
+}
