@@ -365,7 +365,7 @@ header a h2:hover {
 }
 
 tfoot {
-    background-color: rgb(5, 5, 5, 0.05);
+    background-color: rgba(5, 5, 5, 0.05);
 }
 
 .result tr:hover {
