@@ -494,6 +494,7 @@ tfoot {
 
 .thumbnaildesign {
     display: flex;
+    flex-direction: column;
     gap: clamp(1.5vw, 20px, 2.5vw);
 }
 
