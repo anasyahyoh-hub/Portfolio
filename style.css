@@ -496,10 +496,40 @@ tfoot {
 
 .thumbnaildesign {
     display: flex;
+    flex-direction: column;
     gap: clamp(1.5vw, 20px, 2.5vw);
 }
 
 .thumbnaildesign img {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* border-radius: clamp(1vw, 10px, 1.5vw); */
+}
+
+.minecraft-thumbnail {
+    display: flex;
+    gap: clamp(1.5vw, 20px, 2.5vw);
+}
+
+.minecraft-thumbnail img {
+    width: 40vw;
+    flex-grow: 1;
+    flex-shrink: 0;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* border-radius: clamp(1vw, 10px, 1.5vw); */
+}
+
+.efootball-thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1.5vw, 20px, 2.5vw);
+}
+
+.efootball-thumbnail img {
     width: 40vw;
     flex-grow: 1;
     flex-shrink: 0;
