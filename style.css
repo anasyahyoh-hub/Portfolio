@@ -365,7 +365,7 @@ header a h2:hover {
 }
 
 tfoot {
-    background-color: rgb(5, 5, 5, 0.05);
+    background-color: rgba(5, 5, 5, 0.05);
 }
 
 .result tr:hover {
@@ -477,7 +477,6 @@ tfoot {
     flex-shrink: 0;
     aspect-ratio: 16/9;
     object-fit: cover;
-    /* border-radius: clamp(1vw, 10px, 1.5vw); */
 }
 
 .poster {
@@ -491,7 +490,6 @@ tfoot {
     flex-shrink: 0;
     aspect-ratio: 3/4;
     object-fit: cover;
-    /* border-radius: clamp(1vw, 10px, 1.5vw); */
 }
 
 .thumbnaildesign {
@@ -506,7 +504,10 @@ tfoot {
     flex-shrink: 0;
     aspect-ratio: 16/9;
     object-fit: cover;
+<<<<<<< HEAD
     /* border-radius: clamp(1vw, 10px, 1.5vw); */
+=======
+>>>>>>> 41eae38d44e3f976f0e162847ee0fc59a17bc934
 }
 
 .minecraft-thumbnail {
@@ -520,7 +521,10 @@ tfoot {
     flex-shrink: 0;
     aspect-ratio: 16/9;
     object-fit: cover;
+<<<<<<< HEAD
     /* border-radius: clamp(1vw, 10px, 1.5vw); */
+=======
+>>>>>>> 41eae38d44e3f976f0e162847ee0fc59a17bc934
 }
 
 .efootball-thumbnail {
@@ -535,7 +539,6 @@ tfoot {
     flex-shrink: 0;
     aspect-ratio: 16/9;
     object-fit: cover;
-    /* border-radius: clamp(1vw, 10px, 1.5vw); */
 }
 
 /* FOOTER */
