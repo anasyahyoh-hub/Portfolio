@@ -382,7 +382,7 @@ tfoot {
     flex-direction: column;
     padding: clamp(3vw, 3em, 6vw) 10%;
     gap: clamp(2vw, 20px, 4vw);
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(28, 28, 30);
 }
 
 footer a {
